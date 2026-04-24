@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoVolt AI — Smart Energy Management</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <a href="#" class="nav-brand">
+                <span class="logo-bolt">⚡</span>
+                <span class="logo-text">EcoVolt <span class="logo-ai">AI</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#problem">Problem</a></li>
+                <li><a href="#solution">Solution</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#cta" class="nav-cta">Get Started</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-glow glow-green"></div>
+        <div class="hero-bg-glow glow-blue"></div>
+        <div class="container hero-inner">
+            <div class="hero-content">
+                <div class="hero-badge">✨ Powered by AI</div>
+                <h1 class="hero-title">
+                    Save Energy. Save Money.<br>
+                    <span class="gradient-text">Smarter Living with EcoVolt AI.</span>
+                </h1>
+                <p class="hero-subtitle">
+                    EcoVolt AI monitors your electricity in real time, finds waste automatically, and delivers personalized AI insights to shrink your bills — starting day one.
+                </p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary" id="heroGetStarted">Get Started Free</button>
+                    <button class="btn btn-secondary" id="heroDemo">Request a Demo</button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-num">35%</span>
+                        <span class="stat-label">Avg. Bill Reduction</span>
+                    </div>
+                    <div class="stat-sep"></div>
+                    <div class="stat">
+                        <span class="stat-num">10k+</span>
+                        <span class="stat-label">Homes & Businesses</span>
+                    </div>
+                    <div class="stat-sep"></div>
+                    <div class="stat">
+                        <span class="stat-num">Real-time</span>
+                        <span class="stat-label">AI Insights</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="dashboard-mockup">
+                    <div class="mockup-header">
+                        <span class="dot dot-red"></span>
+                        <span class="dot dot-yellow"></span>
+                        <span class="dot dot-green"></span>
+                        <span class="mockup-title">EcoVolt Dashboard</span>
+                    </div>
+                    <div class="mockup-body">
+                        <div class="mockup-row">
+                            <div class="mockup-card">
+                                <span class="card-label">Current Usage</span>
+                                <span class="card-val green-val">2.4 kWh</span>
+                                <span class="card-trend">↓ 18% vs yesterday</span>
+                            </div>
+                            <div class="mockup-card">
+                                <span class="card-label">Monthly Cost</span>
+                                <span class="card-val blue-val">$82.50</span>
+                                <span class="card-trend">↓ $31 saved</span>
+                            </div>
+                        </div>
+                        <div class="mockup-chart-wrap">
+                            <div class="chart-bars" id="chartBars">
+                                <div class="bar" style="--h:60%"></div>
+                                <div class="bar" style="--h:80%"></div>
+                                <div class="bar" style="--h:45%"></div>
+                                <div class="bar bar-active" style="--h:72%"></div>
+                                <div class="bar" style="--h:55%"></div>
+                                <div class="bar" style="--h:40%"></div>
+                                <div class="bar" style="--h:65%"></div>
+                            </div>
+                            <span class="chart-label">7-Day Usage Overview</span>
+                        </div>
+                        <div class="mockup-ai-tip">
+                            <span class="ai-tip-icon">🤖</span>
+                            <span>AI Tip: Run dishwasher after 9 PM to save 22%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROBLEM ===== -->
+    <section class="section-dark" id="problem">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-tag">The Problem</span>
+                <h2>Rising Bills. Zero Visibility. Constant Waste.</h2>
+                <p>Most homes and small businesses have no idea where their energy goes — and they're paying for it every month.</p>
+            </div>
+            <div class="grid-3">
+                <div class="problem-card card-anim">
+                    <div class="problem-icon">📈</div>
+                    <h3>Skyrocketing Electricity Bills</h3>
+                    <p>Energy costs have risen over 40% in the last decade with no signs of slowing — and no tools to fight back.</p>
+                </div>
+                <div class="problem-card card-anim">
+                    <div class="problem-icon">🔍</div>
+                    <h3>No Visibility on Usage</h3>
+                    <p>You only see a monthly total. No breakdown by device, time, or room — making it impossible to act.</p>
+                </div>
+                <div class="problem-card card-anim">
+                    <div class="problem-icon">⚠️</div>
+                    <h3>Invisible Energy Waste</h3>
+                    <p>Idle devices, inefficient appliances, and peak-hour usage silently drain your wallet every single day.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SOLUTION ===== -->
+    <section class="section-light" id="solution">
+        <div class="container solution-inner">
+            <div class="solution-text">
+                <span class="section-tag">The Solution</span>
+                <h2>Meet EcoVolt AI — Your Smart Energy Partner</h2>
+                <p>EcoVolt AI plugs into your home or business and immediately begins tracking energy across every circuit. Our AI engine learns your patterns and delivers personalized actions to cut waste and lower bills.</p>
+                <ul class="check-list">
+                    <li><span class="check-icon">✓</span> Real-time monitoring, 24/7</li>
+                    <li><span class="check-icon">✓</span> AI-generated savings recommendations</li>
+                    <li><span class="check-icon">✓</span> Automated alerts for usage spikes</li>
+                    <li><span class="check-icon">✓</span> Works with your existing meter</li>
+                </ul>
+                <button class="btn btn-primary" id="solutionCTA">See How It Works</button>
+            </div>
+
+            <div class="solution-flow-card">
+                <div class="flow-step">
+                    <div class="flow-icon-wrap green-bg">📡</div>
+                    <div>
+                        <strong>Connect</strong>
+                        <p>Install in minutes — no electrician needed</p>
+                    </div>
+                </div>
+                <div class="flow-arrow">↓</div>
+                <div class="flow-step">
+                    <div class="flow-icon-wrap blue-bg">📊</div>
+                    <div>
+                        <strong>Monitor</strong>
+                        <p>Live energy data from every circuit</p>
+                    </div>
+                </div>
+                <div class="flow-arrow">↓</div>
+                <div class="flow-step">
+                    <div class="flow-icon-wrap green-bg">🤖</div>
+                    <div>
+                        <strong>Optimize</strong>
+                        <p>Personalized AI insights for your home</p>
+                    </div>
+                </div>
+                <div class="flow-arrow">↓</div>
+                <div class="flow-step">
+                    <div class="flow-icon-wrap blue-bg">💰</div>
+                    <div>
+                        <strong>Save</strong>
+                        <p>Real savings on your very next bill</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FEATURES ===== -->
+    <section class="section-tinted" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Features</span>
+                <h2>Everything You Need to Take Control of Your Energy</h2>
+                <p>Powerful tools built for homeowners and small businesses — no technical experience required.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card card-anim">
+                    <span class="feature-icon">⚡</span>
+                    <h3>Real-Time Energy Monitoring</h3>
+                    <p>Track electricity consumption second-by-second across all your devices from one intuitive dashboard.</p>
+                </div>
+                <div class="feature-card feature-featured card-anim">
+                    <div class="featured-badge">Most Popular</div>
+                    <span class="feature-icon">🤖</span>
+                    <h3>AI-Powered Recommendations</h3>
+                    <p>Our AI learns your usage patterns and delivers smart, actionable tips to reduce waste — tailored just for you.</p>
+                </div>
+                <div class="feature-card card-anim">
+                    <span class="feature-icon">📱</span>
+                    <h3>Simple Dashboard</h3>
+                    <p>Clean, beautiful interface accessible from any device — phone, tablet, or desktop. No complexity, just clarity.</p>
+                </div>
+                <div class="feature-card card-anim">
+                    <span class="feature-icon">🏠</span>
+                    <h3>For Homes & Small Businesses</h3>
+                    <p>Flexible plans and sensors that scale from a studio apartment to a multi-unit commercial property.</p>
+                </div>
+                <div class="feature-card card-anim">
+                    <span class="feature-icon">🔔</span>
+                    <h3>Smart Alerts</h3>
+                    <p>Instant notifications when usage spikes, appliances malfunction, or you're approaching your budget limit.</p>
+                </div>
+                <div class="feature-card card-anim">
+                    <span class="feature-icon">📋</span>
+                    <h3>Monthly Reports</h3>
+                    <p>Detailed breakdowns showing savings achieved, carbon footprint, and projected future costs — every month.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== BENEFITS ===== -->
+    <section class="section-light" id="benefits">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Benefits</span>
+                <h2>Real Results for Real People</h2>
+                <p>Join thousands of households and businesses already saving with EcoVolt AI.</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-item card-anim">
+                    <div class="benefit-num">35%</div>
+                    <h3>Average Cost Savings</h3>
+                    <p>Users save an average of 35% on monthly electricity bills within the first 3 months of use.</p>
+                </div>
+                <div class="benefit-item card-anim">
+                    <div class="benefit-num">2x</div>
+                    <h3>Energy Efficiency</h3>
+                    <p>Double your efficiency without replacing appliances — just smarter scheduling and AI-guided habits.</p>
+                </div>
+                <div class="benefit-item card-anim">
+                    <div class="benefit-num">24/7</div>
+                    <h3>Always-On Intelligence</h3>
+                    <p>EcoVolt never sleeps. Continuous monitoring means problems are caught before they cost you.</p>
+                </div>
+                <div class="benefit-item card-anim">
+                    <div class="benefit-num">🌱</div>
+                    <h3>Greener Footprint</h3>
+                    <p>Less waste means less carbon. EcoVolt users cut their CO₂ output by an average of 1.2 tonnes per year.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta-section" id="cta">
+        <div class="cta-glow"></div>
+        <div class="container cta-inner">
+            <h2>Start Saving Today</h2>
+            <p>Request a free demo and see how EcoVolt AI can cut your energy bills within 30 days.</p>
+            <div class="cta-btns">
+                <button class="btn btn-white" id="ctaDemo">Request Demo</button>
+                <button class="btn btn-outline-white" id="ctaStart">Start Saving Today</button>
+            </div>
+            <span class="cta-note">No credit card required &nbsp;·&nbsp; Free 30-day trial</span>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand-col">
+                    <div class="nav-brand footer-brand">
+                        <span class="logo-bolt">⚡</span>
+                        <span class="logo-text">EcoVolt <span class="logo-ai">AI</span></span>
+                    </div>
+                    <p>Smart energy management for homes and businesses. Save more, waste less, live greener.</p>
+                    <div class="social-row">
+                        <a href="#" class="social-btn" aria-label="Twitter">𝕏</a>
+                        <a href="#" class="social-btn" aria-label="LinkedIn">in</a>
+                        <a href="#" class="social-btn" aria-label="Instagram">ig</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#benefits">Benefits</a></li>
+                        <li><a href="#solution">How It Works</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p class="contact-line">📧 hello@ecovoltai.com</p>
+                    <p class="contact-line">📞 +1 (800) ECO-VOLT</p>
+                    <p class="contact-line">📍 San Francisco, CA</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 EcoVolt AI. All rights reserved.</span>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== DEMO MODAL ===== -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <button class="modal-close" id="modalClose" aria-label="Close modal">×</button>
+            <div class="modal-icon-wrap">⚡</div>
+            <h2 id="modalTitle">Request Your Free Demo</h2>
+            <p class="modal-sub">See EcoVolt AI in action. Our team will walk you through everything.</p>
+            <form class="modal-form" id="demoForm" novalidate>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="John Smith" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="john@example.com" required autocomplete="email">
+                </div>
+                <div class="form-group">
+                    <label for="userType">I am a...</label>
+                    <select id="userType">
+                        <option value="homeowner">Homeowner</option>
+                        <option value="business">Small Business Owner</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Book My Free Demo →</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
